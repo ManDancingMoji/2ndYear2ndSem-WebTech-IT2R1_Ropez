@@ -1,0 +1,119 @@
+html { background-color: #E6FBFF;}
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #FFDD50;
+	overflow-x: hidden;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {color: #FFDD50;}
+
+a {color: #E6FBFF;}
+
+a:visited {color: #CDC9FF;}
+
+
+#body {
+	background-color: #A87CEF;
+	margin: 30% 10% 5%;
+	padding: 20px;
+	border: groove 10px #CDC9FF;
+	border-radius: 50px 0 50px 0;
+	box-shadow: #252525 0 0 50px;
+}
+
+#body img {
+	width: 100%;
+}
+
+
+#header_video {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	width: 100%;
+	filter: blur(3px);
+	mask: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0, 0.5), rgba(0,0,0,0));
+}
+
+
+#title {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 5%;
+	width: 100%;
+	margin: auto;
+}
+
+#title img {
+	position: relative;
+	top: 50px;
+	rotate: 5deg;
+	justify-content: flex-end;
+}
+
+#title h1 {
+	text-shadow: black 0 0 10px;
+	text-align: center;
+	position: relative;
+	top: 50px;
+	display: block;
+	font-size: 70px;
+	max-width: 30%;
+	rotate: -3deg;
+}
+
+#title h1 span {
+	font-size: 100px;
+	max-width: 10%;
+}
+
+#title video {
+	z-index: -1;
+}
+
+
+.flex_container {
+	display: flex;
+	flex-basis: 1;
+	flex-flow: wrap;
+}
+
+.flex_container .flex_item {
+	width: 50%;
+}
+
+
+@media screen and (max-width: 1300px) {
+	#title{
+		align-content: center;
+		top: 0px;
+		padding: 10px;
+	}
+	#title img {
+		width: 100px;
+	}
+	#title h1 {
+		font-size: 30px;
+	}
+	#title h1 span {
+		font-size: 50px;
+	}
+
+	#body {
+		margin: 250px 10% 5%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.flex_container{
+		flex-flow: column;
+	}
+	.flex_container .flex_item{
+		width: 100%;
+	}
+}
