@@ -1,8 +1,12 @@
 import '../assets/css/default.css'
 
+import NavBar from '../components/NavBar.jsx';
+
 export default function About(){
     return(
         <body>
+            <NavBar />
+
             <div id="title">
                 <h1>About...</h1>
             </div>
