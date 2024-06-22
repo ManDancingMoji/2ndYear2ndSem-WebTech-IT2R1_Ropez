@@ -1,8 +1,12 @@
 import '../assets/css/default.css'
 
+import NavBar from '../components/NavBar.jsx';
+
 export default function Contact(){
     return(
         <body>
+            <NavBar />
+            
             <div id="title">
                 <h1>Contact Us!</h1>
             </div>

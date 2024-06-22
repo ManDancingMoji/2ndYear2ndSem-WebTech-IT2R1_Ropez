@@ -1,10 +1,16 @@
 import '../assets/css/default.css'
 
+import NavBar from '../components/NavBar.jsx';
+
 export default function Index(){
+    const imageSize = (visualViewport.width < 800 ? "-s" : "")
+
     return (
         <body>
+            <NavBar />
+
             <div id="title">
-                <img src=".\src\assets\img\company-assets\prototype-logo.png" />
+                <img src={"/src/assets/img/company-assets/prototype-logo"+imageSize+".png"} />
             </div>
 
             <div id="body">
